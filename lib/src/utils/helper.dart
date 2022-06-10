@@ -148,8 +148,8 @@ void drawTriangle(Path path, double x, double y, double width, double height) {
 Size measureText(String textValue, TextStyle textStyle, [int? angle]) {
   Size size;
   final TextPainter textPainter = TextPainter(
-      textAlign: TextAlign.center,
-      textDirection: TextDirection.ltr,
+      textAlign: TextAlign.left,
+      textDirection: TextDirection.rtl,
       text: TextSpan(text: textValue, style: textStyle));
   textPainter.layout();
 
